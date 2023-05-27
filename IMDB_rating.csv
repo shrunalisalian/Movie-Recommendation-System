@@ -1,0 +1,192 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IMDB Movies Dataset | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Top 1000 Movies by IMDB Rating" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="arts and entertainment,movies and tv shows" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="ogjB/UpZUo3O1zVlCBNjOg==" type="text/javascript">
+    window["pageRequestStartTime"] = 1679663649805;
+    window["pageRequestEndTime"] = 1679663649912;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="ogjB/UpZUo3O1zVlCBNjOg==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=e4c7092a1deb800ab1ec" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=c458ddd8db0c1f5f7f52" />
+  
+    
+ 
+      <script nonce="ogjB/UpZUo3O1zVlCBNjOg==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="ogjB/UpZUo3O1zVlCBNjOg==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-12629138-1', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="ogjB/UpZUo3O1zVlCBNjOg==" async src="https://www.googletagmanager.com/gtag/js?id=UA-12629138-1"></script>
+
+  
+    
+    <meta property="og:url" content="/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows" />
+    <meta property="og:title" content="IMDB Movies Dataset" />
+    <meta property="og:description" content="Top 1000 Movies by IMDB Rating" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/1131493/1898721/681a0f6d98a5c316523d2731c066200c/dataset-card.jpg?t=2021-02-01-08-06-33" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="ogjB/UpZUo3O1zVlCBNjOg==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"IMDB Movies Dataset","description":"### Context\n\nIMDB Dataset of top 1000 movies and tv shows.\nYou can find the **EDA Process** on - https://www.kaggle.com/harshitshankhdhar/eda-on-imdb-movies-dataset\n\nPlease consider **UPVOTE** if you found it useful. \n\n### Content\n\nData:-\n- **Poster_Link** - Link of the poster that imdb using\n- **Series_Title** = Name of the movie \n- **Released_Year** - Year at which that movie released\n- **Certificate** - Certificate earned by that movie\n- **Runtime** - Total runtime of the movie\n- **Genre** - Genre of the movie\n- **IMDB_Rating** - Rating of the movie at IMDB site\n- **Overview** - mini story/ summary\n- **Meta_score** - Score earned by the movie\n- **Director** - Name of the Director\n- **Star1,Star2,Star3,Star4** - Name of the Stars\n- **No_of_votes** - Total number of votes\n- **Gross** - Money earned by that movie\n\n### Inspiration\n\n- Analysis of the gross of a movie vs directors.\n- Analysis of the gross of a movie vs different - different stars.\n- Analysis of the No_of_votes of a movie vs directors.\n- Analysis of the No_of_votes of a movie vs different - different stars.\n- Which actor prefer which Genre more?\n- Which combination of actors are getting good IMDB_Rating maximum time?\n- Which combination of actors are getting good gross?","url":"https://www.kaggle.com/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows","version":1,"keywords":["subject, arts and entertainment","subject, arts and entertainment, movies and tv shows"],"license":{"@type":"CreativeWork","name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"identifier":["1131493"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Harshit Shankhdhar","url":"https://www.kaggle.com/harshitshankhdhar","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5138057-kg.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows/download?datasetVersionNumber=1","contentSize":"179262 bytes"}],"commentCount":2,"dateModified":"2021-02-01T07:35:48.597Z","discussionUrl":"https://www.kaggle.com/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows/discussion","alternateName":"Top 1000 Movies by IMDB Rating","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/1131493/1898721/681a0f6d98a5c316523d2731c066200c/dataset-card.jpg?t=2021-02-01-08-06-33","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":2},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":23969},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":137635},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":277}]}</script>
+
+
+  
+    
+
+  
+    
+
+
+    <script nonce="ogjB/UpZUo3O1zVlCBNjOg==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="ogjB/UpZUo3O1zVlCBNjOg==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="ogjB/UpZUo3O1zVlCBNjOg==" src="/static/assets/runtime.js?v=69f297dbf3725f16568a" data-turbolinks-track="reload"></script>
+  <script nonce="ogjB/UpZUo3O1zVlCBNjOg==" src="/static/assets/vendor.js?v=3c92dfc609ec377f79f6" data-turbolinks-track="reload"></script>
+  <script nonce="ogjB/UpZUo3O1zVlCBNjOg==" src="/static/assets/app.js?v=6670e05b2d47c3ac06dc" data-turbolinks-track="reload"></script>
+    <script nonce="ogjB/UpZUo3O1zVlCBNjOg==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+<div id="site-container"></div>
+
+<div id="site-body" class="hide">
+    
+
+<div data-component-name="DatasetMaterialContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="ogjB/UpZUo3O1zVlCBNjOg==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"basics":{"datasetId":1131493,"slug":"imdb-dataset-of-top-1000-movies-and-tv-shows","title":"IMDB Movies Dataset","description":"### Context\n\nIMDB Dataset of top 1000 movies and tv shows.\nYou can find the **EDA Process** on - https://www.kaggle.com/harshitshankhdhar/eda-on-imdb-movies-dataset\n\nPlease consider **UPVOTE** if you found it useful. \n\n### Content\n\nData:-\n- **Poster_Link** - Link of the poster that imdb using\n- **Series_Title** = Name of the movie \n- **Released_Year** - Year at which that movie released\n- **Certificate** - Certificate earned by that movie\n- **Runtime** - Total runtime of the movie\n- **Genre** - Genre of the movie\n- **IMDB_Rating** - Rating of the movie at IMDB site\n- **Overview** - mini story/ summary\n- **Meta_score** - Score earned by the movie\n- **Director** - Name of the Director\n- **Star1,Star2,Star3,Star4** - Name of the Stars\n- **No_of_votes** - Total number of votes\n- **Gross** - Money earned by that movie\n\n### Inspiration\n\n- Analysis of the gross of a movie vs directors.\n- Analysis of the gross of a movie vs different - different stars.\n- Analysis of the No_of_votes of a movie vs directors.\n- Analysis of the No_of_votes of a movie vs different - different stars.\n- Which actor prefer which Genre more?\n- Which combination of actors are getting good IMDB_Rating maximum time?\n- Which combination of actors are getting good gross?","viewCount":137635,"downloadCount":23969,"scriptCount":46,"topicCount":2,"owner":{"id":5138057,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5138057-kg.jpg","name":"Harshit Shankhdhar","profileUrl":"/harshitshankhdhar","slug":"harshitshankhdhar","userTier":"EXPERT"},"license":{"id":1,"name":"CC0: Public Domain","url":"https://creativecommons.org/publicdomain/zero/1.0/"},"overview":"Top 1000 Movies by IMDB Rating","collaboratorList":{"owner":{"userId":5138057,"profileUrl":"/harshitshankhdhar","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/5138057-kg.jpg","name":"Harshit Shankhdhar","slug":"harshitshankhdhar","userTier":"EXPERT","type":"OWNER"}},"coverImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/1131493/1898721/681a0f6d98a5c316523d2731c066200c/dataset-cover.jpg?t=2021-02-01-08-06-33","data":{"totalSize":179262,"isFileset":true,"canDownload":true,"firestorePath":"ujfuum0jipTFJiRMViS7/versions/yrSJH2T0jI1BB8iJ9iUz","downloadUrl":"/datasets/harshitshankhdhar/harshitshankhdhar/download?datasetVersionNumber=1","versionId":1937036,"id":1154696},"voteCount":277,"medalUrl":"/static/images/medals/datasets/silverl@2x.png","downloadUrl":"/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows/download?datasetVersionNumber=1","lastUpdateTime":"2021-02-01T07:35:48.597Z","datasetVersionNumber":1,"creatorDisplayName":"Harshit Shankhdhar","cardImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/1131493/1898721/681a0f6d98a5c316523d2731c066200c/dataset-card.jpg?t=2021-02-01-08-06-33","categories":{"tags":[{"id":2200,"name":"arts and entertainment","fullPath":"subject \u003E arts and entertainment","listingUrl":"/datasets?group=public\u0026tagids=2200","description":"Activities that holds the attention and interest of an audience, or gives pleasure and delight. It can be an idea or a task, but is more likely to be one of the activities or events that have developed over thousands of years specifically for the purpose of keeping an audience\u0027s attention.","datasetCount":26887,"notebookCount":22816,"tagUrl":"/tags/arts-and-entertainment","displayName":"Arts and Entertainment"},{"id":2303,"name":"movies and tv shows","fullPath":"subject \u003E arts and entertainment \u003E movies and tv shows","listingUrl":"/datasets?group=public\u0026tagids=2303","description":"Grab a bucket of popcorn and come analyze these movie ratings. The world must know which blockbuster film is the blockbuster film of all time!","datasetCount":8249,"competitionCount":3,"notebookCount":2010,"tagUrl":"/tags/film","displayName":"Movies and TV Shows"}]},"datasetExternalUrl":"https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows","forumId":1148924,"datasetVersionId":1898721,"canCreateTasks":true,"moderationStatus":"PRIVATED_MODERATION_STATUS_NO_ABUSE","lastVersionNumber":1,"diffType":"VERSIONED"}});performance && performance.mark && performance.mark("DatasetMaterialContainer.componentCouldBootstrap");</script><script nonce="ogjB/UpZUo3O1zVlCBNjOg==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="ogjB/UpZUo3O1zVlCBNjOg==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
