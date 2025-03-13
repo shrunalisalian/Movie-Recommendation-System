@@ -188,7 +188,7 @@ precision_at_k(["Interstellar", "Tenet", "The Matrix"], ["Inception", "Interstel
 
 ## 📌 **Connect with Me**  
 - **LinkedIn:** [Shrunali Salian](https://www.linkedin.com/in/shrunali-salian/)  
-- **Portfolio:** [Your Portfolio Link](#)  
+- **Portfolio:** [https://portfolio-shrunali-suresh-salians-projects.vercel.app/](#)  
 - **Email:** [Your Email](#)  
 
 ---
